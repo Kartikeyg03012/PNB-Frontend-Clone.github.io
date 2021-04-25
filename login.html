@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>LOGIN Page</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <link rel="icon" href="images/logo.jpg">
+    <title>LOGIN PAGE</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="css/bootstrap-grid.css">
+    <script src="js/bootstrap.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+      function valid(){
+        var em=document.login.email.value;
+        var ps=document.login.pswd.value;
+
+        if((em==("kartikeyg77@gmail.com"))&&(ps==("1234"))){
+          
+         alert("login success")
+
+        }
+        else{
+          alert("login faild")
+          return false;
+        }
+
+      }
+    </script>
+    <style>
+         hr{
+           border-top: 20px solid #f6b801; 
+        }
+        .footer {
+            position:absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: #a30d3b;
+            color: white;
+            text-align: center;
+            font-size: 15px;
+        }
+
+        .image {
+            background-color: #a30d3b;
+        }
+        </style>
+</head>
+<body>
+    <div class="image">
+        <center><img src="images/pnb.jpg." class="img-fluid" alt="Responsive image"></center>
+    </div>
+    <hr>
+   <h3>Please login here....</h3>
+<div class="container">
+  <form action="successlogin.html"name="login">
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="email" class="form-control" id="email" placeholder="Enter email" name="email" required> <span id="email" style="color: red;"></span>
+    </div>
+    <div class="form-group">
+      <label for="pwd">Password:</label>
+      <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd" required> <span id="pass" style="color: red;"></span>
+    </div>
+    <button type="submit" class="btn btn-primary" onclick="valid();">Submit</button><br><br>
+  </form>
+  <a href="signup.html"> <button type="submit" class="btn btn-primary">Create a new Account</button></a>
+</div>
+
+<div class="footer">
+    <p> Importent links:&nbsp;&nbsp;&nbsp;&nbsp;Terms & condition&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;
+        Privacy
+        Policy&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;Disclaimer&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;Securitu
+        Informnation</p>
+</div>
+
+
+</body>
+</html>

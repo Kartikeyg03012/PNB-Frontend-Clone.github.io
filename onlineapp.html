@@ -1,0 +1,151 @@
+<html>
+
+<head>
+    <link rel="icon" href="images/logo.jpg">
+    <title>online application</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="css/bootstrap-grid.css">
+    <script src="js/bootstrap.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    
+    <style>
+        a{
+            font-size: 20px;
+        }
+        
+        hr {
+            border-top: 20px solid #f6b801;
+        }
+
+        li {
+            font-size: 20px;
+        }
+
+        .footer {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: #a30d3b;
+            color: white;
+            text-align: center;
+            font-size: 15px;
+        }
+
+        .image {
+            background-color: #a30d3b;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="image">
+        <center><img src="images/pnb.jpg." class="img-fluid" alt="Responsive image" id="img"></center>
+    </div>
+    <hr>
+    <div class="container">
+        <div class="jumbotron">
+            <center>
+                <h2>ONLINE APPLICATION</h2>
+            </center>
+            <br><br>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                  <ul class="navbar-nav">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="main.html">Home <span class="sr-only"></span></a>
+                    </li>&nbsp;&nbsp;&nbsp;&nbsp;
+                    <li class="nav-item active">
+                    <a class="nav-link" href="https://netbanking.netpnb.com/corp/AuthenticationController?FORMSGROUP_ID__=AuthenticationFG&__START_TRAN_FLAG__=Y&__FG_BUTTONS__=LOAD&ACTION.LOAD=Y&AuthenticationFG.LOGIN_FLAG=1&BANK_ID=024"><button type="button"class="btn btn-outline-primary btn-lg">Genrate Debit Card PIN</button></a>
+                    </li>
+                    <li class="nav-item active">
+                      <a class="nav-link" href="https://www.pnbindia.in/suchna.html">Suchna</a>
+                    </li>&nbsp;&nbsp;&nbsp;&nbsp;
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                       Loan
+                      </a>&nbsp;&nbsp;&nbsp;&nbsp;
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#">Car Loan</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                        <a class="dropdown-item" href="#">Home Loan</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                        <a class="dropdown-item" href="#">Education Loan</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                        <a class="dropdown-item" href="#">Business Loan</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+              <br><br><br>
+        </div></div>
+            
+        <center><h2 id="h2">!!!UPI Fraud Alert!!!</h2>
+            <br><br><img src="images/upifraud.jpg" class="img-fluid"></center>
+        <br><br>
+        <div class="jumbotron">
+            <center>
+                <h2>Security tips</h2>
+            </center>
+            <p><b>Please be aware of the following:</b>
+                <ul>
+                    <li> Phishing is a deception technique where fraudster uses fraudulent emails to capture your
+                        personal sensitive information like passwords, CVV, Date of Birth, Debit Card/ Credit Card
+                        Number, address, expiry date, PIN etc.</li>
+                    <li>Vishing (also known as Voice Phishing) is a deception
+                        technique where the fraudster uses a phone call to lure you into giving your personal
+                        confidential banking information.</li>
+                    <li>Smishing is a deception technique where the fraudster uses
+                        Short Message Service (SMS) to send false message to lure you to call a phone number or visit a
+                        website for giving your personal confidential banking information.</li>
+                    <li>Please don’t give any of your
+                        personal confidential credentials like PAN, Date of Birth, Account Number, Debit or Credit Card
+                        Number & its Expiry Date, Father/Mother’s Name, User ID, Password, PIN, CVV, OTP etc.upon
+                        receiving the Phishing, Vishing or Smishing. Our Bank never asks such information from
+                        customers.</li>
+                </ul>
+            </p>
+        </div>
+
+    </div>
+
+    <div class="footer">
+        <p> Importent links:&nbsp;&nbsp;&nbsp;&nbsp;Terms & condition&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;
+            Privacy
+            Policy&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;Disclaimer&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;Securitu
+            Informnation</p>
+    </div>
+
+    <script type="text/javascript">
+        var h2 = document.querySelector('#h2')
+        function getRandomColor() {
+            letters = '0123456789ABCDEF'
+            var color = '#'
+            for (i = 0; i < 6; i++) {
+                var r = Math.floor(Math.random() * 16)
+                color = color + letters[r]
+                //  color =   # + 2 + F + 4 + A + 9 + B
+            }
+            return color;
+        }
+
+        function changeColor() {
+            h2.style.backgroundColor = getRandomColor()
+           
+        }
+
+        setInterval(changeColor,300)
+
+    </script>
+</body>
+
+</html>

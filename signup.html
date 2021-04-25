@@ -1,0 +1,140 @@
+<html>
+
+<head>
+  <link rel="icon" href="images/logo.jpg">
+    <title>SIGNUP</title>
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="css/bootstrap-grid.css">
+    <script src="js/bootstrap.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <style>
+        body {font-family: Arial, Helvetica, sans-serif;}
+        * {box-sizing: border-box}
+        
+        /* Full-width input fields */
+        input {
+          width: 100%;
+          padding: 15px;
+          margin: 5px 0 22px 0;
+          display: inline-block;
+          border: none;
+          background: #f1f1f1;
+        }
+        
+        input:focus, input:focus {
+          background-color: #ddd;
+          outline: none;
+        }
+        
+        hr {
+          border: 1px solid #f1f1f1;
+          margin-bottom: 25px;
+        }
+        
+        /* Set a style for all buttons */
+        button {
+          background-color: #4CAF50;
+          color: white;
+          padding: 14px 20px;
+          margin: 8px 0;
+          border: none;
+          cursor: pointer;
+          width: 100%;
+          opacity: 0.9;
+        }
+        
+        button:hover {
+          opacity:1;
+        }
+        
+        /* Extra styles for the cancel button */
+        .cancelbtn {
+          padding: 14px 20px;
+          background-color: #f44336;
+        }
+        
+        /* Float cancel and signup buttons and add an equal width */
+        .cancelbtn, .signupbtn {
+          float: left;
+          width: 50%;
+        }
+        
+        /* Add padding to container elements */
+        .container {
+          padding: 16px;
+        }
+        
+        /* Clear floats */
+        .clearfix::after {
+          content: "";
+          clear: both;
+          display: table;
+        }
+        
+        /* Change styles for cancel button and signup button on extra small screens */
+        @media screen and (max-width: 300px) {
+          .cancelbtn, .signupbtn {
+             width: 100%;
+          }
+        }
+        .footer {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: #a30d3b;
+            color: white;
+            text-align: center;
+            font-size: 15px;
+        }
+        .image {
+            background-color:#a30d3b;
+        }
+        hr {
+            border-top: 20px solid #f6b801;
+        }
+
+    </style>
+</head>
+<body><div class="image">
+  <center><img src="images/pnb.jpg." class="img-fluid" alt="Responsive image" id="img"></center>
+</div> 
+<hr>  
+
+    <div class="jumbotron">
+    
+        <center><h1>Welcome To signup Form</h1></center>
+        <form style="border:1px solid #ccc" name="form">
+            <div class="container">
+              <p>Please fill in this form to create an account.</p>
+          
+              <label for="email"><b>Username</b></label>
+              <input type="text" placeholder="Enter Username" name="Username" required>
+              <label for="email"><b>A/C no.</b></label>
+              <input type="number" placeholder="Enter Account no." name="Ac" required maxlength="16" minlength="16">
+              
+              <label for="email"><b>Mobile no.</b></label>
+              <input type="number" placeholder="Enter mobile no." name="mobileno" required minlength="10" maxlength="10">
+              <label for="email"><b>D-O-B</b></label>
+              <input type="date" placeholder="Enter D-O-B" name="D-O-B" required>
+              <label for="psw"><b>Password</b></label>
+              <input type="password" placeholder="Enter Password" name="psw" required>
+          
+              <label for="psw-repeat"><b>Confirm Password</b></label> 
+              <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+              <div class="clearfix">
+                <button type="button" class="cancelbtn" onclick="this.form.reset()">Reset</button>
+              <button type="submit" class="signupbtn" onclick="formvalidation()">Sign Up</button>
+              </div>
+            </div>
+          </form><br><br>
+    <div class="footer">
+        <p> Importent links:&nbsp;&nbsp;&nbsp;&nbsp;Terms & condition&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;
+            Privacy
+            Policy&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;Disclaimer&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;Security
+            Informnation</p>
+    </div>
+
+</body>
+
+</html>
